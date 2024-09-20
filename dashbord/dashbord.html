@@ -1,51 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/dashbord.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0-rc.1/Chart.bundle.js"></script>
     <title>داشبورد</title>
 </head>
+
 <body>
     <div class="conteyner">
-        <section>
+        <section class="menu-section">
             <div class="menu">
-                <div class="name-company">
-                    <img src="../icons/mehr-logo.svg" alt="ایکون مهر">
-                    <p>مهر</p>
+                <div class="first_item-menu">
+                    <div class="name-Company hidden">
+                        <img src="../icons/mehr-logo.svg" alt="ایکون مهر">
+                        <p>مهر</p>
+                    </div>
+                    <div id="BtnSizeMenu">
+                        <img src="../icons/menu.svg">
+                    </div>
                 </div>
                 <div class="menu_item-conteyner">
                     <div class="menu-items">
                         <img src="../icons/dashbord.svg">
-                        <a href="#">داشبورد</a>
+                        <a href="#" class="menu_content-text hidden">داشبورد</a>
                     </div>
                     <div class="menu-items">
                         <img src="../icons/commerce.svg">
-                        <a href="#">تجارت الکترونیک</a>
+                        <a href="#" class="menu_content-text hidden">تجارت الکترونیک</a>
                     </div>
                     <div class="menu-items">
                         <img src="../icons/calender.svg">
-                        <a href="#">تقویم</a>
+                        <a href="#" class="menu_content-text hidden">تقویم</a>
                     </div>
                     <div class="menu-items">
                         <img src="../icons/mail.svg">
-                        <a href="#">پیام ها </a>
+                        <a href="#" class="menu_content-text hidden">پیام ها </a>
                     </div>
                     <div class="menu-items">
                         <img src="../icons/contacts.svg">
-                        <a href="#">مخاطبین</a>
+                        <a href="#" class="menu_content-text hidden">مخاطبین</a>
                     </div>
                     <div class="menu-items">
                         <img src="../icons/to-do.svg">
-                        <a href="#">انجام دادن</a>
+                        <a href="#" class="menu_content-text hidden">انجام دادن</a>
                     </div>
                     <div class="menu-items">
                         <img src="../icons/file-manager.svg">
-                        <a href="#">مدیریت فایل</a>
+                        <a href="#" class="menu_content-text hidden">مدیریت فایل</a>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="main-section">
+            <div class="header">
+                <header>
+                    <div class="rightBox">
+                        <div class="profile">
+                            <div class="statusUser">
+                                <img src="../icons/statusOn.svg">
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="notifBox">
+                            <div class="notifIcon">
+                                <img src="../icons/notif.svg">
+                            </div>
+                            <div class="mailIcon">
+                                <img src="../icons/mailinNotif.svg">
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="serachBox">
+                            <input type="text" placeholder="جستجو برای هر چیز...">
+                        </div>
+                    </div>
+                    <div class="leftBox">
+                        <div class="velcomeText">
+                            <p>به پنل مدیریتی مهر خوش آمدید!</p>
+                        </div>
+                    </div>
+                </header>
+            </div>
+                <main>
+                    <div class="topBox">
+                        <div class="topOne">
+                            <div class="oneItem">
+                                <div class="leftCol">
+                                    <p>21.3هزار</p>
+                                    <p>وظایف محول شده</p>
+                                </div>
+                                <div class="rightCol">
+                                    <img src="../icons/fileIcon.svg">
+                                </div>
+                                <div class="backgroundBox">
+                                    <img src="../icons/lineChart.svg">
+                                </div>
+                            </div>
+                            <div class="twoItem">
+                                <div class="leftCol">
+                                    <p>18.7هزار</p>
+                                    <p>وظایف تکمیل شده</p>
+                                </div>
+                                <div class="rightCol">
+                                    <img src="../icons/fileIcon.svg">
+                                </div>
+                                <div class="backgroundBox">
+                                    <img src="../icons/lineChart.svg">
+                                </div>
+                            </div>
+                            <div class="treeItem">
+                                <div class="leftCol">
+                                    <p>19.2هزار</p>
+                                    <p>وظایف خاتمه یافته</p>
+                                </div>
+                                <div class="rightCol">
+                                    <img src="../icons/fileIcon.svg">
+                                </div>
+                                <div class="backgroundBox">
+                                    <img src="../icons/lineChart.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="topTwo">
+                            <div class="headerChart">
+                                <div class="contentChart">
+                                    <p>نمودار میله ای</p>
+                                </div>
+                            </div>
+                            <div>
+                                <canvas id="Bar-Chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+        </section>
     </div>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
