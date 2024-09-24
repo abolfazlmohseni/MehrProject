@@ -12,11 +12,14 @@ body {
 .conteyner {
     width: 100%;
     height: 1640px;
+    display: flex;
 }
-
+.menu-section {
+    width: 2.5%;
+}
 .menu{
     background-image: linear-gradient(to top,#425365,#1F2935 );
-    width: 12%;
+    width: 100%;
     height: 100%;
 }
 .name-company{
