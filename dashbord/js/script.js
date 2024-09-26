@@ -11,22 +11,22 @@ let FlagMenu = true
 
 BtnSizeMenu.addEventListener('click', function () {
     if (FlagMenu === false) {
-        menuElem.style.width = "2.5%"
-        mainSection.style.width = "97.5%"
-        FlagMenu = true
+        menuElem.style.width = "2.5%";
+        mainSection.style.width = "97.5%";
+        FlagMenu = true;
         ContentTextElem.forEach(function (item) {
-            item.classList = "hidden"
-        })
-        nameCompanyElem.classList = "hidden"
+            item.classList.add("hidden");
+        });
+        nameCompanyElem.classList.add("hidden");
     } else {
-        menuElem.style.width = "12%"
-        mainSection.style.width = "88%"
-        FlagMenu = false
+        menuElem.style.width = "12%";
+        mainSection.style.width = "88%";
+        FlagMenu = false;
         ContentTextElem.forEach(function (item) {
-            item.classList -= "hidden"
-        })
-        nameCompanyElem.classList = "name-Company"
-
+            item.classList.remove("hidden");
+        });
+        nameCompanyElem.classList.remove("hidden");
     }
-})
+});
+
 
