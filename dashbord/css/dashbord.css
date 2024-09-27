@@ -21,6 +21,9 @@ body {
     background-image: linear-gradient(to top,#425365,#1F2935 );
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .first_item-menu {
     display: flex;
@@ -35,12 +38,17 @@ body {
     margin-right: 6px;
 }
 .menu_item-conteyner{
+    width: 100%;
     height: 480px;
     margin-top: 1rem;
 }
 #BtnSizeMenu {
     margin-left: 12px;
     margin-top: 5px;
+}
+.closemenu {
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 .menu-items{
     height: 60px;

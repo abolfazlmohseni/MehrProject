@@ -18,6 +18,7 @@ BtnSizeMenu.addEventListener('click', function () {
             item.classList.add("hidden");
         });
         nameCompanyElem.classList.add("hidden");
+        BtnSizeMenu.classList.add("closemenu");
     } else {
         menuElem.style.width = "12%";
         mainSection.style.width = "88%";
@@ -26,6 +27,7 @@ BtnSizeMenu.addEventListener('click', function () {
             item.classList.remove("hidden");
         });
         nameCompanyElem.classList.remove("hidden");
+        BtnSizeMenu.classList.remove("closemenu");
     }
 });
 
