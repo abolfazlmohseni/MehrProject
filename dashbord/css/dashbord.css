@@ -83,7 +83,7 @@ body {
 header {
     display: flex;
     width: 100%;
-    height: 80px;
+    height: 70px;
     align-items: center;
     justify-content: space-between;
     flex-direction: row-reverse;
@@ -163,6 +163,7 @@ main {
     background-color: #DBE7EE;
     width: 100%;
     height: 1640px;
+    padding: 30px;
 }
 
 .topBox {
@@ -181,20 +182,48 @@ main {
     justify-content: space-between;
 }
 
+.oneItem {
+    background-image: linear-gradient(to left,#FF3D57,#FF8A48);
+}
+
+.twoItem {
+    background-image: linear-gradient(to left,#09B66D,#22CCE2);
+}
+
+.treeItem{
+    background-image: linear-gradient(to left,#0081FF,#22CCE2);
+}
+
 .oneItem,
 .twoItem,
 .treeItem {
     width: 200px;
     height: 120px;
+    color: #fff;
+    border-radius: 6px;
 }
 
-.col-conteyner {}
+.col-conteyner {
+    display: flex;
+    justify-content: space-around;
+}
 
-.leftCol {}
+.leftCol p {
+    margin: 5px 0;
+}
 
-.rightCol {}
+.bottomtxt {
+    margin-top: 10px !important;
+    margin-bottom: 32px !important;
+}
 
-.backgroundBox {}
+.rightCol {
+    height: 45px;
+    margin-top: 15px;
+}
+
+.backgroundBox {
+}
 
 .topTwo {}
 
