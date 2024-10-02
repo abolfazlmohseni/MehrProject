@@ -18,6 +18,7 @@ body {
 
 .menu-section {
     width: 2.5%;
+    transition: all ease 0.3s;
 }
 
 .menu {
@@ -77,6 +78,7 @@ body {
 
 .main-section {
     width: 97.5%;
+    transition: all ease 0.3s;
 }
 
 /* header */
@@ -161,9 +163,9 @@ header {
 /* header End */
 main {
     background-color: #DBE7EE;
-    width: 100%;
+    width: 97%;
     height: 1640px;
-    padding: 30px;
+    padding: 1.5%;
 }
 
 .topBox {
