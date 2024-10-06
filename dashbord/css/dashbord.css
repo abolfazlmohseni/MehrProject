@@ -235,4 +235,7 @@ main {
 
 .toptree {}
 
-.Status-Chart {}
+#Status-Chart {
+    width: 700px;
+    height: 700px;
+}

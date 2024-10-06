@@ -31,16 +31,18 @@ BtnSizeMenu.addEventListener('click', function () {
   }
 });
 // Charts
+
+// chart On
 var BarChart = document.getElementById("Bar-Chart").getContext("2d");
 
 
-var gradient1 = BarChart.createLinearGradient(0, 0, 0, 400);
-gradient1.addColorStop(0, 'rgb(9, 182, 109)');  
-gradient1.addColorStop(1, 'rgb(37, 209, 232)');   
+var Bargradient1 = BarChart.createLinearGradient(0, 0, 0, 400);
+Bargradient1.addColorStop(0, 'rgb(9, 182, 109)');  
+Bargradient1.addColorStop(1, 'rgb(37, 209, 232)');   
 
-var gradient2 = BarChart.createLinearGradient(0, 0, 0, 400);
-gradient2.addColorStop(0, 'rgb(255, 138, 72)');   
-gradient2.addColorStop(1, 'rgb(253, 191, 94)');   
+var Bargradient2 = BarChart.createLinearGradient(0, 0, 0, 400);
+Bargradient2.addColorStop(0, 'rgb(255, 138, 72)');   
+Bargradient2.addColorStop(1, 'rgb(253, 191, 94)');   
 
 var BarChartone = new Chart(BarChart, {
   type: 'bar',
@@ -50,12 +52,12 @@ var BarChartone = new Chart(BarChart, {
       {
         label: 'آمار 1',
         data: [213, 54, 96, 153, 456, 245, 355], 
-        backgroundColor: gradient1
+        backgroundColor: Bargradient1
       },
       {
         label: 'آمار 2',
         data: [175, 123, 466, 485, 174, 453, 125], 
-        backgroundColor: gradient2           
+        backgroundColor: Bargradient2           
       }
     ]
   },
@@ -77,5 +79,41 @@ var BarChartone = new Chart(BarChart, {
   }
 }); 
 
+// chart Two
+
+var StatusChart = document.getElementById("Status-Chart");
+
+// var Statusgradient1 = StatusChart.createLinearGradient(0, 0, 0, 400);
+// Statusgradient1.addColorStop(0, 'rgb(9, 182, 109)');  
+// Statusgradient1.addColorStop(1, 'rgb(37, 209, 232)');   
 
 
+var LineChartone = new Chart(StatusChart, {
+  type: 'line',
+  data: {
+    labels: ['شنبه', 'یکشنبه', 'دوشنبه', 'سه شنبه', 'چهارشنبه', 'پنجشنبه', 'جمعه'],
+    datasets: [
+      {
+        label: 'آمار 1',
+        data: [213, 54, 96, 153, 456, 245, 355], 
+        backgroundColor: "#000"
+      }
+    ]
+  },
+  options: {
+    responsive: false,
+    scales: {
+      x: {
+        ticks: {
+          font: {
+            family: 'iransans',  
+            size: 14,  
+            style: 'italic',  
+            weight: 'bold',   
+            lineHeight: 1.2   
+          }
+        }
+      }
+    }
+  }
+}); 
