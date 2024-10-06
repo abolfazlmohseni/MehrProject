@@ -1,3 +1,4 @@
+window.addEventListener("DOMContentLoaded",function () {
 // shortcut
 let $ = document
 // Elemenets
@@ -33,7 +34,7 @@ BtnSizeMenu.addEventListener('click', function () {
 // Charts
 
 // chart On
-var BarChart = document.getElementById("Bar-Chart").getContext("2d");
+var BarChart = $.getElementById("Bar-Chart").getContext("2d");
 
 
 var Bargradient1 = BarChart.createLinearGradient(0, 0, 0, 400);
@@ -44,7 +45,7 @@ var Bargradient2 = BarChart.createLinearGradient(0, 0, 0, 400);
 Bargradient2.addColorStop(0, 'rgb(255, 138, 72)');   
 Bargradient2.addColorStop(1, 'rgb(253, 191, 94)');   
 
-var BarChartone = new Chart(BarChart, {
+var BarChartOne = new Chart(BarChart, {
   type: 'bar',
   data: {
     labels: ['شنبه', 'یکشنبه', 'دوشنبه', 'سه شنبه', 'چهارشنبه', 'پنجشنبه', 'جمعه'],
@@ -80,40 +81,34 @@ var BarChartone = new Chart(BarChart, {
 }); 
 
 // chart Two
+var StatusChart = $.getElementById("Status-Chart").getContext("2d");
 
-var StatusChart = document.getElementById("Status-Chart");
+var Linegradient1 = StatusChart.createLinearGradient(0, 0, 0, 400);
+Linegradient1.addColorStop(0, 'rgb(9, 182, 109)');  
+Linegradient1.addColorStop(1, 'rgb(37, 209, 232)');   
 
-// var Statusgradient1 = StatusChart.createLinearGradient(0, 0, 0, 400);
-// Statusgradient1.addColorStop(0, 'rgb(9, 182, 109)');  
-// Statusgradient1.addColorStop(1, 'rgb(37, 209, 232)');   
-
-
-var LineChartone = new Chart(StatusChart, {
+var LinChartOne = new Chart(StatusChart, {
   type: 'line',
   data: {
-    labels: ['شنبه', 'یکشنبه', 'دوشنبه', 'سه شنبه', 'چهارشنبه', 'پنجشنبه', 'جمعه'],
-    datasets: [
-      {
-        label: 'آمار 1',
-        data: [213, 54, 96, 153, 456, 245, 355], 
-        backgroundColor: "#000"
-      }
-    ]
+    labels: ['1/1','1/2','1/3','1/4','1/5','1/6','1/7','1/8','1/9','1/10'], //دیتای تستی
+    datasets: [{
+      label: 'رطوبت خاک',
+      data: [16, 83, 88, 26, 93, 25, 36, 61, 87, 63],    //دیتای تستی
+      backgroundColor: Linegradient1,
+      borderColor: Linegradient1,
+      borderWidth: 3,
+      hoverBorderWidth: 3.5,
+    }]
   },
   options: {
     responsive: false,
     scales: {
       x: {
-        ticks: {
-          font: {
-            family: 'iransans',  
-            size: 14,  
-            style: 'italic',  
-            weight: 'bold',   
-            lineHeight: 1.2   
-          }
-        }
+        type: 'linear',
+        position: 'bottom'
       }
     }
   }
-}); 
+});
+
+})
