@@ -84,8 +84,8 @@ var BarChartOne = new Chart(BarChart, {
 var StatusChart = $.getElementById("Status-Chart").getContext("2d");
 
 var Linegradient1 = StatusChart.createLinearGradient(0, 0, 0, 400);
-Linegradient1.addColorStop(0, 'rgb(9, 182, 109)');  
-Linegradient1.addColorStop(1, 'rgb(37, 209, 232)');   
+Linegradient1.addColorStop(0, 'rgba(255, 61, 87,0.6)');  
+Linegradient1.addColorStop(1, 'rgba(255, 138, 72,0.01)');   
 
 var LinChartOne = new Chart(StatusChart, {
   type: 'line',
@@ -96,8 +96,10 @@ var LinChartOne = new Chart(StatusChart, {
       data: [16, 83, 88, 26, 93, 25, 36, 61, 87, 63],    //دیتای تستی
       backgroundColor: Linegradient1,
       borderColor: Linegradient1,
-      borderWidth: 3,
-      hoverBorderWidth: 3.5,
+      borderWidth: 1.5,
+      hoverBorderWidth: 2,
+      hoverBorderColor:"#000",
+      hoverBackgroundColor:"#000",
     }]
   },
   options: {
