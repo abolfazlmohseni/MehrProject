@@ -226,19 +226,89 @@ main {
 
 .backgroundBox {}
 
+.twoItem {}
+
+.col-conteyner {}
+
+.leftCol {}
+
+.bottomtxt {}
+
+.rightCol {}
+
+.treeItem {}
+
 .topTwo {}
 
 .headerChart {}
 
 .contentChart {}
 
+.Bar-Chart{
+    width: 600px;
+    height: 300px;
+}
+
 .toptree {}
 
-#Status-Chart {
-    width: 700px;
-    height: 700px;
-}
+.timeTable {}
+
+.headerTabel {}
+
+.headerTabel_left {}
+
+.headerTabel_right {}
+
+.BodyTable {}
+
+.middleBox {}
+
+.RowOne {}
+
+.dayWeek-Conteyner {}
+
+.dayWeek {}
+
+.cellBox {}
 
 .rowWeek {}
 
+.Sat {}
+
 .rowTime {}
+
+.Sun {}
+
+.Mon {}
+
+.Tue {}
+
+.Wed {}
+
+.Thu {}
+
+.Fri {}
+
+.RowTow {}
+
+.timeRangeConteyner {}
+
+.TimeRangeItems {}
+
+.BottomBox {}
+
+.BottomBox_Left {}
+
+.lineChart_Two {}
+
+.lineChartTwo_header {}
+
+.lineChartTwo_canvas {}
+
+.BottomBox_right {}
+
+.doughnutChart_Two {}
+
+.doughnutChartTwo_header {}
+
+.doughnutChartTwo_canvas {}
