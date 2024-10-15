@@ -169,6 +169,7 @@ main {
 }
 
 .topBox {
+    display: flex;
     height: 560px;
 }
 
@@ -238,18 +239,47 @@ main {
 
 .treeItem {}
 
-.topTwo {}
-
-.headerChart {}
-
-.contentChart {}
-
-.Bar-Chart{
-    width: 600px;
-    height: 300px;
+.topTwo {
+    width: 665px;
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 2rem;
 }
 
-.toptree {}
+
+.headerChart {
+    width: 90%;
+    text-align: right !important;
+}
+
+.contentChart {
+    display: flex;
+    align-items: center;
+    height: 45px;
+}
+
+.contentChart p {
+    margin-right:10px;
+}
+
+.Border {
+    height: 25px;
+    border-left: 4px solid transparent;
+    border-image: linear-gradient(to bottom, #0081FF, #22CCE2) 1;
+    border-radius: 5px;
+}
+
+.Bar-Chart {}
+
+.toptree {
+    width: 430px;
+    height: 560px;
+}
 
 .timeTable {}
 

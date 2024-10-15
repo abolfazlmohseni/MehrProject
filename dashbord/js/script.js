@@ -75,7 +75,12 @@ window.addEventListener("DOMContentLoaded", function () {
               lineHeight: 1.2
             }
           }
-        }
+        },
+        xAxes: [{
+          gridLines: {
+              display: false // غیرفعال کردن خطوط راهنمای محور X
+          }
+      }]
       }
     }
   });
@@ -108,7 +113,17 @@ window.addEventListener("DOMContentLoaded", function () {
         x: {
           type: 'linear',
           position: 'bottom'
-        }
+        },
+        xAxes: [{
+          gridLines: {
+              display: false // غیرفعال کردن خطوط راهنمای محور X
+          }
+      }],
+      yAxes: [{
+          gridLines: {
+              display: false // غیرفعال کردن خطوط راهنمای محور Y
+          }
+      }]
       }
     }
   });
