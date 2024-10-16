@@ -12,6 +12,7 @@ body {
 
 .conteyner {
     width: 100%;
+    /* max-width: 1440px; */
     height: 1640px;
     display: flex;
 }
@@ -265,6 +266,7 @@ main {
 
 .contentChart p {
     margin-right:10px;
+    margin-top: 15px;
 }
 
 .Border {
@@ -274,7 +276,9 @@ main {
     border-radius: 5px;
 }
 
-.Bar-Chart {}
+.Bar-Chart {
+    height: 330px;
+}
 
 .toptree {
     width: 430px;
