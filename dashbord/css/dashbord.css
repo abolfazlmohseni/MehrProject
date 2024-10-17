@@ -177,6 +177,7 @@ main {
 .box_oneTwo-conteyner {
     width: 665px;
     height: 560px;
+    margin-right: 2.5rem;
 }
 
 .topOne {
@@ -283,6 +284,13 @@ main {
 .toptree {
     width: 430px;
     height: 560px;
+    background-color: #fff;
+    margin-right: 2.5rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
 }
 
 .timeTable {}
