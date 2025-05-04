@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="22.993" height="23.996" viewBox="0 0 22.993 23.996">
-  <g id="Notification" transform="translate(0.993 5)">
-    <path id="Shape" d="M9,18a1.805,1.805,0,0,1-1.557-.9h3.114A1.806,1.806,0,0,1,9,18Zm8.9-4.5H.007A2.7,2.7,0,0,0,2.7,10.8V6.3a6.3,6.3,0,0,1,12.6,0v4.5a2.691,2.691,0,0,0,2.6,2.7Z" fill="none" stroke="#8291a9" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
-    <g id="Dot" transform="translate(13 -2)" fill="#ff3d57" stroke="#fff" stroke-miterlimit="10" stroke-width="3">
-      <rect width="6" height="6" rx="3" stroke="none"/>
-      <rect x="-1.5" y="-1.5" width="9" height="9" rx="4.5" fill="none"/>
-    </g>
-  </g>
-</svg>
